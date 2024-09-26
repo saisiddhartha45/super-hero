@@ -15,4 +15,8 @@ export class SuperheroDataService {
   getAllHeroes(): Observable<Root[]> {
     return this.http.get<Root[]>(`${this.apiUrl}all.json`);
   }
+
+  getHeroById(id: number): Observable<Root> {
+    return this.http.get<Root>(`${this.apiUrl}/id/${id}.json`);
+  }
 }

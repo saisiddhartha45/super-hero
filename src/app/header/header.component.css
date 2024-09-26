@@ -1,6 +1,7 @@
 .header-container {
   position: sticky;
   top: 0;
+  z-index: 9999;
 }
 
 h1 {
@@ -9,4 +10,5 @@ h1 {
   padding: 10px;
   background-color: #121212;
   margin-bottom: 25px;
+
 }
